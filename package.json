@@ -1,7 +1,7 @@
 {
   "name": "react-open-weather",
   "bin": {},
-  "version": "2.1.5",
+  "version": "2.0.0",
   "description": "React Weather component",
   "main": "lib/ReactWeather.js",
   "engines": {
@@ -63,6 +63,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
+    "prebuild": "rm -rf lib",
     "build": "./node_modules/webpack/bin/webpack.js --config webpack.config.build.js",
     "start": "webpack serve --config webpack.config.dev.js --mode development",
     "test": "./node_modules/.bin/jest",
@@ -70,7 +71,7 @@
     "lint": "./node_modules/.bin/eslint ./src/js ;exit 0",
     "coverage": "./node_modules/.bin/jest --coverage",
     "release": "np",
-    "dist": "npm publish",
+    "dist": "npm run build && npm publish",
     "replace": "npm -f unpublish & npm run dist"
   },
   "repository": {

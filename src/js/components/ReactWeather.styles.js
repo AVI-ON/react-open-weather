@@ -10,7 +10,7 @@ const useStyles = createUseStyles({
   main: {
     color: ({ theme }) => theme.locationFontColor,
     width: '100%',
-    height: '70%',
+    height: '60%',
     background: ({ theme }) =>
       `linear-gradient(to bottom right, ${theme.gradientStart}, ${theme.gradientMid}, ${theme.gradientEnd})`,
     display: 'flex',
