@@ -1,5 +1,5 @@
 {
-  "name": "react-open-weather",
+  "name": "@avi-on/react-open-weather",
   "bin": {},
   "version": "2.0.0",
   "description": "React Weather component",
