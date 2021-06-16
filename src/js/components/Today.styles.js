@@ -1,6 +1,14 @@
 import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
+  currentWrapper: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+  },
+  currentItem: {
+    alignSelf: 'flex-end',
+  },
   date: {
     color: ({ theme }) => theme.todayDateFontColor,
   },
